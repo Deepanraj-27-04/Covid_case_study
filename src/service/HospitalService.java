@@ -20,7 +20,7 @@ public class HospitalService implements iService.IHospitalService {
             double distance=calculateDistance(longitude, longitude, hospital.getLatitude(), hospital.getLongitude());
             if(distance<=maxDistance){
             hospitalid=hospital.getId();
-            System.out.println("HospitalId "+hospitalid);
+            System.out.println("HospitalId "+hospitalid +" Hospital_name "+hospital.getName());
             break;
         }
 
